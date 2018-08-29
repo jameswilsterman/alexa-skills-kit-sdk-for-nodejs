@@ -7,7 +7,7 @@ Standard Response
 
 If you are using the lambda as your skill endpoint, you are only responsible for providing the response body in order for Alexa to respond to a customer request. The documentation on the JSON structure of the response body can be found `here <https://developer.amazon.com/docs/custom-skills/request-and-response-json-reference.html#response-format>`_.
 
-A response body may contains the following properties:
+A response body may contain the following properties:
 
 * version
 * sessionAttributes
@@ -75,7 +75,7 @@ The following example shows how to construct a response using
 
 .. note::
 
-  The contents of the speak and reprompt values get wrapped in SSML tags. This means that any special XML characters within the value need to be escape coded. For example, ``handlerInput.responseBuilder.speak("I like M&M's")`` will cause a failure because the ``&`` character needs to be encoded as ``&amp``;. Other characters that need to be encoded include: ``<`` ``->`` ``&lt;``, and ``>`` ``->`` ``&gt;``.
+  The contents of the speak and reprompt values get wrapped in SSML tags. This means that any special XML characters within the value need to be escape coded. For example, ``handlerInput.responseBuilder.speak("I like M&M's")`` will cause a failure because the ``&`` character needs to be encoded as ``&amp;``. Other characters that need to be encoded include: ``<`` -> ``&lt;``, and ``>`` -> ``&gt;``.
 
 Image and Text Helpers
 ======================
